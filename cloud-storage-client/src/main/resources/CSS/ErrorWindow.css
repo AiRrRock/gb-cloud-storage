@@ -1,0 +1,45 @@
+.root{
+   -fx-background-color: rgb(50,50,50);
+}
+
+.text-area .content,
+.text-field .content{
+   -fx-background-color:  rgb(50,50,50);
+   -fx-text-fill: rgb(44,44,44);
+   -fx-text-alignment: CENTER;
+}
+
+.text-area,
+.text-field{
+  -fx-background-color:  rgb(50,50,50);
+  -fx-border-width: 0 0 0 0;
+  -fx-font-family: Consolas;
+  -fx-highlight-fill: #00ff00;
+  -fx-highlight-text-fill: #000000;
+  -fx-text-fill: #00ff00;
+  -fx-alignment: CENTER;
+}
+.text-area:focused,
+.text-field:focused{
+   -fx-faint-focus-color: transparent;
+   -fx-border-width: 0;
+   -fx-border-color: transparent;
+   -fx-text-alignment:CENTER;
+}
+
+.button {
+   -fx-border-radius: 10;
+   -fx-background-radius: 10  ;
+   -fx-min-height: 32;
+   -fx-min-width: 100;
+   -fx-background-color: radial-gradient(radius 300%, rgb(22, 33, 188), rgb(3,22,122));
+   -fx-text-fill: rgb(196,188,222);
+}
+.button:hover{
+   -fx-background-color: radial-gradient(radius 300%, rgb(50, 33, 188), rgb(30,22,122));
+   -fx-text-fill: #000;
+}
+
+.button:pressed{
+   -fx-text-fill: #FFF;
+}
