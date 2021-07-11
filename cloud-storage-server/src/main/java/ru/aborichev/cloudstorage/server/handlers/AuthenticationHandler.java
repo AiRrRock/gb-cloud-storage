@@ -5,7 +5,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.aborichev.cloudstorage.core.messages.user.AuthenticationUserMessage;
-import ru.aborichev.cloudstorage.core.service.environment.ConfigurationEnvironment;
+import ru.aborichev.cloudstorage.core.service.ConfigurationEnvironment;
 import ru.aborichev.cloudstorage.core.session.AuthenticationStatus;
 import ru.aborichev.cloudstorage.core.session.UserSession;
 import ru.aborichev.cloudstorage.core.session.impl.BasicUserSession;
@@ -15,10 +15,9 @@ import java.util.UUID;
 
 public class AuthenticationHandler extends ChannelInboundHandlerAdapter {
     private static final Logger LOGGER = LogManager.getLogger(AuthenticationStatus.class);
-    private static final ConfigurationEnvironment configurations = Factory.getConfigurationEnvironment();
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) {
         LOGGER.debug("Received new message of " + msg.getClass() + " class");
         if (msg instanceof AuthenticationUserMessage) {
             LOGGER.debug("Authentication started");

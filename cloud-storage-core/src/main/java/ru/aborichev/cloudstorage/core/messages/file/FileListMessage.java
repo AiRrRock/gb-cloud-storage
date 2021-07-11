@@ -14,8 +14,4 @@ public class FileListMessage extends AbstractFileMessage {
         super(session);
     }
 
-    public FileListMessage(UserSession session, final FileNode fileNode) {
-        super(session);
-        this.fileNode = fileNode;
-    }
 }
