@@ -1,23 +1,23 @@
 package ru.aborichev.factory;
 
-import ru.aborichev.cloudstorage.core.service.compression.CompressionService;
-import ru.aborichev.cloudstorage.core.service.compression.impl.ZipCompressionService;
-import ru.aborichev.cloudstorage.core.service.environment.impl.BasicConfigurationEnvironment;
-import ru.aborichev.cloudstorage.core.service.file.chunks.FileChunkProviderService;
-import ru.aborichev.cloudstorage.core.service.file.chunks.impl.BasicFileChunkProviderService;
-import ru.aborichev.cloudstorage.core.service.file.directory.DirectoryService;
-import ru.aborichev.cloudstorage.core.service.file.directory.impl.BasicDirectoryService;
-import ru.aborichev.cloudstorage.core.service.file.integrity.FileIntegrityCheckerService;
-import ru.aborichev.cloudstorage.core.service.file.integrity.impl.MD5FileIntegrityCheckerService;
-import ru.aborichev.cloudstorage.core.service.providers.CommandExecutorProviderService;
-import ru.aborichev.cloudstorage.core.service.environment.ConfigurationEnvironment;
-import ru.aborichev.service.file.FileSenderService;
-import ru.aborichev.service.file.impl.BasicFileSenderService;
-import ru.aborichev.service.resolver.impl.LocalFilePathResolver;
-import ru.aborichev.service.resolver.PathResolver;
-import ru.aborichev.service.network.NetworkService;
-import ru.aborichev.service.providers.impl.BasicCommandExecutorServiceProvider;
-import ru.aborichev.service.network.impl.IONetworkService;
+import ru.aborichev.cloudstorage.core.service.CompressionService;
+import ru.aborichev.cloudstorage.core.service.impl.ZipCompressionService;
+import ru.aborichev.cloudstorage.core.service.impl.BasicConfigurationEnvironment;
+import ru.aborichev.cloudstorage.core.service.FileChunkProviderService;
+import ru.aborichev.cloudstorage.core.service.impl.BasicFileChunkProviderService;
+import ru.aborichev.cloudstorage.core.service.DirectoryService;
+import ru.aborichev.cloudstorage.core.service.impl.BasicDirectoryService;
+import ru.aborichev.cloudstorage.core.service.FileIntegrityCheckerService;
+import ru.aborichev.cloudstorage.core.service.impl.MD5FileIntegrityCheckerService;
+import ru.aborichev.cloudstorage.core.service.CommandExecutorProviderService;
+import ru.aborichev.cloudstorage.core.service.ConfigurationEnvironment;
+import ru.aborichev.service.FileSenderService;
+import ru.aborichev.service.impl.BasicFileSenderService;
+import ru.aborichev.service.impl.LocalFilePathResolver;
+import ru.aborichev.service.PathResolver;
+import ru.aborichev.service.NetworkService;
+import ru.aborichev.service.impl.BasicCommandExecutorServiceProvider;
+import ru.aborichev.service.impl.IONetworkService;
 
 public class Factory {
 

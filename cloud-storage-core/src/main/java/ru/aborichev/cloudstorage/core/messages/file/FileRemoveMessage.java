@@ -12,7 +12,4 @@ public class FileRemoveMessage extends AbstractFileMessage {
         this.filename = filename;
     }
 
-    public String getFilename() {
-        return filename;
-    }
 }
